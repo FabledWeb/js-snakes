@@ -45,10 +45,10 @@ class LeosSnake extends Snake {
       move = this.moveUp();
     } else if (this.isValidMove(this.turnRight(), opponent, dimensions)) {
       move = this.turnRight();
-    } else if (this.check2spotsahead(this.goStraight(), opponent, dimensions)) {
-      move = this.goStraight();
-    } else {
+    } else if (this.isValidMove(this.turnLeft(), opponent, dimensions)){
       move = this.turnLeft();
+    } else {
+      move = this.goStraight();
     }
 
     return move;
