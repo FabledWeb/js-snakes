@@ -23,14 +23,14 @@ class LeosSnake extends Snake {
     if (this.body.length === 1) {
       move = this.moveUp();
     }
-    else if (this.isValidMove(this.turnLeft(), opponent, dimensions)) {
-      move = this.turnLeft();
+    else if (this.isValidMove(this.turnRight(), opponent, dimensions)) {
+      move = this.turnRight();
     }  
     else if (this.isValidMove(this.goStraight(), opponent, dimensions)) {
       move = this.goStraight();
     }
     else {
-      move = this.turnRight();
+      move = this.turnLeft();
     }  
     
     return move;

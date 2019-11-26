@@ -1,13 +1,13 @@
 class BensSnake extends Snake {
 
-    constructor() {
-      super({
-        color: '#ffeb3b',
-        accent: '#c8b900',
-        name: 'rattler',
-        author: 'Ben',
-      });
-    }
+  constructor() {
+    super({
+      color: '#ffeb3b',
+      accent: '#c8b900',
+      name: 'rattler',
+      author: 'Ben',
+    });
+  }
 
   update(dt, opponent, dimensions) {
     // dt = time since last update
