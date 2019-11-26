@@ -34,7 +34,7 @@ class DadsSnake extends Snake {
       // for first step pick a way that's safe
       if (this.isValidMove(this.moveUp(), opponent, dimensions)) {
         move = this.moveUp();
-      } else if (this.isValidMove(this.goDown(), opponent, dimensions)) {
+      } else if (this.isValidMove(this.moveDown(), opponent, dimensions)) {
         move = this.moveDown();
       } else if (this.isValidMove(this.moveLeft(), opponent, dimensions)) {
         move = this.moveLeft();
