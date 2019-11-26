@@ -45,6 +45,7 @@ class DadsSnake extends Snake {
         this.favoredDirection = move;
       } else if (this.isValidMove(this.goStraight(), opponent, dimensions)) {
         move = this.goStraight();
+        this.favoredDirection = move;
       }
     }
 
